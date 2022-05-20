@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jira-clone-client/static/css/main.52b09537.css",
+    "main.js": "/jira-clone-client/static/js/main.a38a896f.js",
+    "index.html": "/jira-clone-client/index.html",
+    "static/media/getFetch.cjs": "/jira-clone-client/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.52b09537.css.map": "/jira-clone-client/static/css/main.52b09537.css.map",
+    "main.a38a896f.js.map": "/jira-clone-client/static/js/main.a38a896f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52b09537.css",
+    "static/js/main.a38a896f.js"
+  ]
+}
