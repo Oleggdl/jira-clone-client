@@ -1,0 +1,18 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+
+#toast-container {
+  position: absolute;
+  bottom: 80px;
+  display: inline-block;
+  margin-left: 50px;
+  padding: 3px 15px;
+  border-radius: 3px;
+  background-color: $main-color;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+
+  .toast {
+    color: #ffffff;
+  }
+}

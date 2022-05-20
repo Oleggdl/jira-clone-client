@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.complete-sprint-container {
+  position: fixed;
+  width: 500px;
+  left: calc(50% - 250px);
+  top: calc(50% - 150px);
+  background-color: $main-background-color;
+  z-index: 5;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  p {
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.completed-tasks-count {
+  margin-bottom: 0;
+}
+
+.complete-sprint-buttons {
+  margin: 30px 0 0 0;
+
+  button {
+    min-width: 120px;
+  }
+}
+
+.complete-sprint-button {
+  margin-right: 10px;
+
+  span {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,153 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.task-info-wrapper {
+  position: fixed;
+  width: 100%;
+  top: -64px;
+  height: calc(100% + 64px);
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.task-info-container {
+  position: absolute;
+  display: flex;
+  width: 70%;
+  height: 700px;
+  left: 15%;
+  top: calc(50% - 320px);
+  background-color: $main-background-color;
+  z-index: 5;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  .close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border: unset;
+    width: 30px;
+    height: 30px;
+    background-color: unset;
+    transition: .3s;
+    border-radius: 3px;
+    padding: 3px 0 0 0;
+
+    &:hover {
+      background-color: $button-task-hover;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .task-info-left {
+    width: 70%;
+    padding-right: 40px;
+    overflow-y: auto;
+
+    h2 {
+      width: 100%;
+      font-size: 2.6rem;
+      @include disabled-selection;
+    }
+
+    .task-info-left-description {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    .submit-button {
+
+      span {
+        color: #ffffff;
+      }
+    }
+
+    .primary-button-submit:first-child {
+      span {
+        color: #ffffff;
+      }
+    }
+
+    .buttons-activity {
+
+      .button-active {
+        background-color: #a8a8a8;
+      }
+
+      button {
+        cursor: pointer;
+        margin-right: 10px;
+        border: 0;
+        transition: .3s;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $button-task-hover;
+        }
+      }
+    }
+  }
+}
+
+.delete-task-button {
+  min-width: 120px;
+  height: 32px;
+  margin: 7px 0 0 auto;
+  border: 1px #e51414 solid;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+  background-color: unset;
+  color: #e51414;
+
+  &:hover {
+    background-color: #e51414;
+    color: #ffffff;
+  }
+}
+
+.delete-task-container {
+  position: absolute;
+  width: 400px;
+  top: calc(50% - 320px);
+  left: calc(50% - 200px);
+  background-color: $main-background-color;
+  z-index: 5;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  h3 {
+    font-size: 2.3rem;
+  }
+
+  button {
+    width: 100px;
+    margin-top: 10px;
+  }
+}
+
+.delete-task-wrapper {
+  position: fixed;
+  top: -64px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh + 64px);
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.confirm-delete-task {
+  margin-right: 10px;
+
+  span {
+    color: #ff4d4f;
+  }
+}

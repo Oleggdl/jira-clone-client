@@ -1,0 +1,99 @@
+@import 'src/styles/variables';
+
+.board-container {
+  position: relative;
+  left: 300px;
+  padding: 30px 40px 0 40px;
+  width: calc(100% - 300px);
+  overflow-y: auto;
+  height: calc(100vh - 64px);
+
+  .empty-board {
+    font-size: 3rem;
+  }
+}
+
+.project-path {
+  color: $secondary-text;
+  font-size: 14px;
+
+  span {
+    color: $secondary-text;
+    font-size: 14px;
+  }
+
+  .project-text {
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      text-decoration: underline;
+      color: $secondary-text-hover;
+    }
+  }
+}
+
+.columns-container {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-bottom: 40px;
+
+  .button-add-column {
+    border: unset;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: unset;
+
+    &:hover {
+      background-color: $input_background;
+    }
+
+    span {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.tasks-search {
+  width: 250px;
+  height: 30px;
+  background-color: $input_background;
+  border: 1px $input-border solid;
+  outline: unset;
+  font-size: 14px;
+
+  &:focus {
+    border: 1px $main-color solid;
+  }
+}
+
+.search-tasks-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 7px;
+  left: 230px;
+}
+
+.complete-board-btn-container {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.complete-sprint-board-btn {
+  span {
+    color: #ffffff;
+  }
+}
+

@@ -1,0 +1,34 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+
+.invite-colleague-container {
+  position: fixed;
+  width: 520px;
+  top: calc(50% - 250px);
+  left: calc(50% - 260px);
+  background-color: $main-background-color;
+  z-index: 5;
+  padding: 40px 40px 0 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .ant-form-item-label {
+    width: 150px;
+  }
+}
+
+.invite-btn {
+  span {
+    color: #ffffff;
+  }
+}
+
+.invite-buttons {
+  bottom: 20px;
+  right: 40px;
+}

@@ -1,0 +1,418 @@
+{
+  "welcomeComponent": {
+    "title": "Welcome to Jira-clone app",
+    "text": "This application is designed to create tasks, assign executors, set priorities and track the progress of these tasks."
+  },
+  "navbar": {
+    "create": "Create task",
+    "projects": {
+      "title": "Projects",
+      "favorites": "Favorites",
+      "show": "Show all projects",
+      "create": "Create project"
+    },
+    "staff": {
+      "title": "Staff",
+      "colleague": "Colleague",
+      "invite": "Invite a colleague"
+    },
+    "logout": "Log out",
+    "languages": {
+      "current": "Current language",
+      "en": "English",
+      "ru": "Russian",
+      "by": "Belarusian"
+    }
+  },
+  "createTaskComponent": {
+    "title": "Create task",
+    "project": "Project",
+    "taskName": "Task name",
+    "description": "Task description",
+    "executor": "Executor",
+    "author": "Author",
+    "submitBtn": "Create",
+    "cancelBtn": "Cancel",
+    "placeholders": {
+      "project": "Select project",
+      "name": "Enter task name",
+      "description": "Enter task description",
+      "executor": "Select executor"
+    },
+    "errors": {
+      "project": {
+        "required": "Please select project!"
+      },
+      "task": {
+        "required": "Please input task name!",
+        "max": "Task name cannot be longer than 50 characters",
+        "min": "Task name must be at least 3 characters",
+        "pattern": "Task name must contain letters"
+      },
+      "description": {
+        "max": "Task name cannot be longer than 1000 characters"
+      }
+    }
+  },
+  "allProjects": {
+    "button": "Create project",
+    "title": "Projects",
+    "table": {
+      "name": "Project name",
+      "key": "Project key",
+      "supervisor": "Supervisor"
+    }
+  },
+  "projectInfo": {
+    "title": "Project settings",
+    "name": "Project name",
+    "key": "Project key",
+    "description": "Project description",
+    "supervisor": "Supervisor",
+    "iaFavorite": "Add to favorites projects",
+    "createBtn": "Update",
+    "cancelBtn": "Cancel",
+    "deleteBtn": "Delete project",
+    "placeholders": {
+      "name": "Enter project name",
+      "key": "Enter project key",
+      "description": "Enter project description"
+    },
+    "errors": {
+      "name": {
+        "required": "Please input project name!",
+        "max": "Project name cannot be longer than 50 characters",
+        "min": "Project name must be at least 3 characters",
+        "pattern": "Project name must contain letters"
+      },
+      "key": {
+        "required": "Please input project key!"
+      },
+      "description": {
+        "max": "Project description cannot be longer than 600 characters"
+      }
+    }
+  },
+  "deleteProject": {
+    "title": "Are you absolutely sure?",
+    "text1": "Unexpected bad things will happen if you don’t read this!",
+    "text2.1": "This action cannot be undone. This will permanently delete the ",
+    "text2.2": " sprints, tasks, labels and remove all collaborator associations.",
+    "typeText1": "Please type ",
+    "typeText2": " to confirm.",
+    "button": "I understand the consequences, delete this project"
+  },
+  "inviteCUsers": {
+    "title": "Invite users to Jira-clone",
+    "project": "Project",
+    "userType": "User type",
+    "email": "Email",
+    "addBtn": "Add colleague",
+    "cancelBtn": "Cancel",
+    "placeholders": {
+      "project": "Select project",
+      "email": "Enter email",
+      "userType": "Select type of user"
+    },
+    "type": {
+      "developer": "Developer",
+      "owner": "Product owner"
+    },
+    "errors": {
+      "project": {
+        "required": "Please select project!"
+      },
+      "userType": {
+        "required": "Please select type of user!"
+      },
+      "email": {
+        "required": "Please input email!",
+        "pattern": "Email must contain @"
+      }
+    }
+  },
+  "authPage": {
+    "login": {
+      "title": "Login to your account",
+      "username": "Username",
+      "password": "Password",
+      "loginBtn": "Log in",
+      "text": "Haven't created an account yet?",
+      "signUp": "Sign up",
+      "placeholders": {
+        "username": "Enter username",
+        "password": "Enter password"
+      },
+      "errors": {
+        "username": "Please input username!",
+        "password": "Please input password!"
+      }
+    },
+    "signup": {
+      "title": "User registration",
+      "name": "Name",
+      "surname": "Surname",
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "passwordRepeat": "Repeat password",
+      "loginBtn": "Log in",
+      "dontMatch": "Passwords do not match",
+      "text": "Already exists an account?",
+      "signUp": "Sign up",
+      "placeholders": {
+        "username": "Enter username",
+        "name": "Enter name",
+        "surname": "Enter surname",
+        "email": "Enter email",
+        "password": "Enter password",
+        "passwordRepeat": "Enter your password again"
+      },
+      "errors": {
+        "username": {
+          "required": "Please input username!",
+          "max": "Username cannot be longer than 30 characters",
+          "min": "Username must be at least 3 characters",
+          "pattern": "Username must contain letters"
+        },
+        "email": {
+          "required": "Please input email!",
+          "max": "Email cannot be longer than 30 characters",
+          "min": "Email must be at least 3 characters",
+          "pattern": "Email must contain @"
+        },
+        "name": {
+          "required": "Please input name!",
+          "max": "Name cannot be longer than 30 characters",
+          "min": "Name must be at least 3 characters",
+          "pattern": "Name must contain letters"
+        },
+        "surname": {
+          "required": "Please input surname!",
+          "max": "Surname cannot be longer than 30 characters",
+          "min": "Surname must be at least 3 characters",
+          "pattern": "Name must contain letters"
+        },
+        "password": {
+          "required": "Please input password!",
+          "max": "Password cannot be longer than 30 characters",
+          "min": "Password must be at least 8 characters",
+          "pattern1": "Password must contain numbers",
+          "pattern2": "Password must contain letters"
+        },
+        "passwordRepeat": {
+          "required": "Please repeat password!",
+          "max": "Password cannot be longer than 30 characters",
+          "min": "Password must be at least 8 characters",
+          "pattern1": "Password must contain numbers",
+          "pattern2": "Password must contain letters"
+        }
+      }
+    }
+  },
+  "createProject": {
+    "title": "Create project",
+    "name": "Project name",
+    "key": "Project key",
+    "description": "Project description",
+    "iaFavorite": "Add to favorites projects",
+    "createBtn": "Update",
+    "cancelBtn": "Cancel",
+    "placeholders": {
+      "name": "Enter project name",
+      "key": "Enter project key",
+      "description": "Enter project description"
+    },
+    "errors": {
+      "name": {
+        "required": "Please input project name!",
+        "max": "Project name cannot be longer than 50 characters",
+        "min": "Project name must be at least 3 characters",
+        "pattern": "Project name must contain letters"
+      },
+      "key": {
+        "required": "Please input project key!",
+        "max": "Project key cannot be longer than 7 characters",
+        "pattern": "Project key must contain letters"
+      },
+      "description": {
+        "max": "Project description cannot be longer than 600 characters"
+      }
+    }
+  },
+  "sideBar": {
+    "title": "Planning",
+    "backlog": "Backlog",
+    "board": "Board"
+  },
+  "backlogComponent": {
+    "title": "Backlog",
+    "projects": "Projects",
+    "errorDnd": "You cannot move tasks in the backlog",
+    "startSprintError": "You cannot move tasks in a running sprint",
+    "roles": {
+      "developer": "Developer",
+      "scrum": "Scrum master",
+      "owner": "Product owner"
+    }
+  },
+  "sprintComponent": {
+    "start": "Start a sprint",
+    "complete": "Complete a sprint",
+    "taskCount": "Task count",
+    "changeSprintBtn": "Change sprint",
+    "deleteSprintBtn": "Delete sprint",
+    "createTaskBtn": "Create task",
+    "createTaskInput": "What should be done?",
+    "errorDeleteM": "You cannot delete sprints",
+    "del": {
+      "title": "Remove Sprint?",
+      "text": "Are you sure you want to delete ",
+      "deleteBtn": "Delete",
+      "cancel": "Cancel"
+    },
+    "change": {
+      "title": "Change sprint",
+      "name": "Sprint name",
+      "startDate": "The date of the beginning",
+      "endDate": "The date of the ending",
+      "updateBtn": "Update",
+      "cancelBtn": "Cancel",
+      "placeholders": {
+        "name": "Enter sprint name"
+      },
+      "errors": {
+        "required": "Please input sprint name!",
+        "max": "Sprint name cannot be longer than 50 characters",
+        "min": "Sprint name must be at least 3 characters",
+        "pattern": "Sprint name must contain letters"
+      }
+    }
+  },
+  "startSprintWindow": {
+    "title": "Sprint launch",
+    "text": " tasks were included in this sprint",
+    "name": "Sprint name",
+    "namePlaceholder": "Enter sprint name",
+    "startDate": "The date of the beginning",
+    "endDate": "The date of the ending",
+    "cancelBtn": "Cancel",
+    "submitBtn": "Launch",
+    "errors": {
+      "required": "Please input sprint name!",
+      "max": "Sprint name cannot be longer than 50 characters",
+      "min": "Sprint name must be at least 3 characters",
+      "pattern": "Sprint name must contain letters",
+      "start": "Please select a start date!",
+      "end": "Please select an end date!"
+    }
+  },
+  "backlogElement": {
+    "title": "Backlog",
+    "text": "Tasks count",
+    "createSprintBtn": "Create a sprint",
+    "createTaskBtn": "Create task",
+    "placeholder": "What should be done?"
+  },
+  "boardComponent": {
+    "noSprint": "No sprint started",
+    "projects": "Projects",
+    "boardName": "Board name",
+    "errorDnd": "You cannot move tasks around the board"
+  },
+  "taskInfo": {
+    "errorDelTask": "You cannot delete this task",
+    "taskName": {
+      "errors": {
+        "required": "Please input task name!",
+        "max": "Task name cannot be longer than 50 characters",
+        "min": "Task name must be at least 3 characters",
+        "pattern": "Task name must contain letters",
+        "placeholder": "Enter task name"
+      },
+      "submitBtn": "Update",
+      "canselBtn": "Cancel"
+    },
+    "deleteBtn": "Delete task",
+    "deleteTask": {
+      "title": "Remove ",
+      "text1": "You are about to permanently delete this task, as well as the comments, data, and attachments associated with it.",
+      "text2": "Instead, you can choose to resolve it or close it.",
+      "delBtn": "Delete",
+      "cancelBtn": "Cancel"
+    },
+    "description": {
+      "title": "Description",
+      "placeholder": "Enter task description",
+      "submitBtn": "Submit",
+      "cancelBtn": "Cancel"
+    },
+    "comments": "Comments"
+  },
+  "commentComponent": {
+    "placeholder": "Add a comment",
+    "submitBtn": "Submit",
+    "cancelBtn": "Cancel"
+  },
+  "commentElement": {
+    "delError": "You can't delete comment",
+    "changeBtn": "Change",
+    "delBtn": "Delete",
+    "changed": "Changed",
+    "change": {
+      "placeholder": "Add a comment",
+      "submitBtn": "Submit",
+      "cancelBtn": "Cancel"
+    },
+    "del": {
+      "title": "Delete this comment?",
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    }
+  },
+  "taskInformation": {
+    "title": "Information",
+    "author": "Author",
+    "marks": "Marks",
+    "addMark": "Add mark",
+    "sprint": "Sprint",
+    "priority": "Priority",
+    "executor": "Executor",
+    "noAppointment": "NO APPOINTMENT",
+    "createDate": "Create date",
+    "marksWindow": {
+      "title": "Add marks to ",
+      "name": "Mark name",
+      "input": {
+        "placeholder": "Enter mark name",
+        "error": "Mark name cannot be longer than 15 characters"
+      },
+      "color": "Mark color",
+      "addBtn": "Add",
+      "cancel": "Cancel"
+    }
+  },
+  "columnComponent": {
+    "count": "Task count"
+  },
+  "completeSprintComponent": {
+    "title": "Complete sprint",
+    "numberComplete": "Number of completed tasks",
+    "numberNotComplete": "Number of not completed tasks",
+    "text": "Choose where all not completed tasks should be moved",
+    "move": "Move to",
+    "btnComplete": "Complete",
+    "btnCancel": "Cancel",
+    "backlog": "Backlog",
+    "newSprint": "New sprint"
+  },
+  "userOnProject": {
+    "title": "Deleting a user",
+    "text1": "Are you sure you want to remove user ",
+    "text2": " from the project ",
+    "text3": "All links, comments, tags and so on will be removed.",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "deleteBtn": "Remove user from project"
+  }
+}

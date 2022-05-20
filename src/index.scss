@@ -1,0 +1,30 @@
+@import './src/styles/variables';
+
+html{
+  font-size: 10px;
+}
+
+body {
+  /*overflow-x: hidden;*/
+  margin: 0;
+  background-color: $main-background-color!important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 1.6rem;
+
+
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  color: unset!important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

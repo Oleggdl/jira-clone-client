@@ -1,0 +1,56 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+
+.delete-project-container {
+  position: absolute;
+  width: 500px;
+  top: calc(50% - 320px);
+  left: calc(50% - 250px);
+  background-color: $main-background-color;
+  z-index: 5;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  @include disabled-selection;
+
+  span{
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .confirm-delete {
+    color: #e51414;
+    font-weight: bold;
+    background-color: unset;
+    border: 1px #d9d9d9 solid;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 3px;
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #e51414;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: unset;
+      background-color: unset;
+      color: #e51414;
+    }
+  }
+}
+
+

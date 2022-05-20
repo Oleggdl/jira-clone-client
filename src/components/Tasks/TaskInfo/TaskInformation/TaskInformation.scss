@@ -1,0 +1,164 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.task-info-right {
+  width: 30%;
+  padding: 20px;
+  border: 1px #bebebe solid;
+  border-radius: 5px;
+
+  h3 {
+    font-size: 2.1rem;
+  }
+
+  .supervisor-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-color;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .supervisor-container {
+    display: flex;
+
+    span {
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 2.1;
+    }
+  }
+
+  h4 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+
+.add-mark-button {
+  width: 100%;
+  height: 30px;
+  @include button;
+}
+
+.add-marks-container {
+  position: absolute;
+  width: 500px;
+  top: calc(50% - 300px);
+  left: calc(50% - 250px);
+  background-color: $main-background-color;
+  z-index: 5;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  h4 {
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+  }
+
+  button {
+    width: 100px;
+    margin-top: 10px;
+  }
+}
+
+.add-marks-confirm {
+  margin-right: 10px;
+
+  span {
+    color: #ffffff;
+  }
+}
+
+.color-picker {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+
+  div {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.mark-element {
+  position: relative;
+  min-height: 32px;
+  padding: 5px 13px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+
+  span {
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 2px;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #ffffff;
+    }
+  }
+}
+
+.active-color {
+  border: 1px #000000 solid;
+}
+
+.task-priority {
+  display: flex;
+  justify-content: left;
+  margin: 6px 0 0 10px;
+}
+
+.executor-logo {
+  margin: 0 0 0 10px;
+}
+
+.priority-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.priority-name {
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+
+.task-priority-select {
+  display: flex;
+  justify-content: left;
+}
+
+.priority-icon-select {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.priority-name-select {
+  margin-left: 5px;
+  text-transform: capitalize;
+}

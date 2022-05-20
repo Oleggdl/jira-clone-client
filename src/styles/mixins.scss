@@ -1,0 +1,66 @@
+@import './src/styles/variables';
+
+@mixin task-container {
+  background-color: $main-background-color;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  transition: .3s;
+
+  @include disabled-selection;
+}
+
+@mixin disabled-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin button {
+  cursor: pointer;
+  background-color: $button-background-color;
+  border-radius: 3px;
+  border: unset;
+  transition: .3s;
+  box-sizing: border-box;
+  border: 1px rgb(0, 0, 0, 0) solid;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: 0;
+
+  &:hover {
+    color: $main-color;
+    border: 1px $main-color solid;
+  }
+}
+
+@mixin form {
+
+  background-color: $aside-background-color;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  left: calc(50% - 300px);
+  top: 25%;
+
+  h2 {
+    text-align: center;
+  }
+  button:first-child {
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .ant-form-item-label {
+    width: 160px;
+  }
+}

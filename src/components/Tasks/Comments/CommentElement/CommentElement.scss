@@ -1,0 +1,86 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.comment-container {
+
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+
+  form {
+    width: 100%;
+  }
+
+  .author-name {
+    display: flex;
+    width: 100%;
+
+    h5 {
+      line-height: 2.45;
+      margin-left: 10px;
+    }
+
+    p {
+      margin-left: 10px;
+      margin-top: 3px;
+      font-weight: 200;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .comments-buttons {
+    button {
+      border: none;
+      background: unset;
+      cursor: pointer;
+      transition: .3s;
+      font-weight: 500;
+      color: $secondary-text;
+      padding: 0;
+      margin-right: 7px;
+
+      &:hover {
+        color: $secondary-text-hover;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .confirm-window {
+    position: absolute;
+    background-color: #c7c7c7;
+    padding: 15px;
+    border-radius: 5px;
+    left: 145px;
+    top: 0;
+    z-index: 3;
+
+    h5 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 0 4px;
+      height: 28px;
+      font-size: 13px;
+    }
+
+    .primary-button {
+      margin-right: 10px;
+
+      span {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .ant-btn-primary {
+    span {
+      color: #ffffff;
+    }
+  }
+}
+

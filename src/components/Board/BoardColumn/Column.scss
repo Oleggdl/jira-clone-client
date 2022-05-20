@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+@import './src/styles/mixins';
+
+.column-container {
+  min-width: 430px;
+  height: 100%;
+  margin-right: 25px;
+  position: relative;
+  padding: 10px;
+  background-color: $column-container-background;
+  border-radius: 5px;
+
+  .column-title {
+    display: flex;
+
+    h5 {
+      margin: 5px 10px 0 auto;
+      color: #727272!important;
+    }
+
+    &:hover {
+      .column-component-settings {
+        opacity: 1;
+        background-color: #d7d7d7;
+      }
+    }
+
+    @include disabled-selection;
+  }
+
+  h4 {
+    padding: 5px 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+.column-task-container {
+  padding-top: 10px;
+}

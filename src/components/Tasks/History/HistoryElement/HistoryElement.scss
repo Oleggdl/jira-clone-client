@@ -1,0 +1,30 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+
+.history-element-container {
+
+  display: flex;
+
+  .history-user-logo {
+    width: 30px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .author-name {
+    display: flex;
+
+    p {
+      margin-left: 7px;
+      line-height: 2;
+    }
+
+    h5 {
+      margin-left: 7px;
+      line-height: 2.5;
+    }
+  }
+}

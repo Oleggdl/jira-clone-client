@@ -1,0 +1,36 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.comments-container {
+
+  .comments-user-logo {
+    min-width: 30px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.9;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  .form-add-comments {
+    display: flex;
+    margin-top: 20px;
+
+
+    form {
+      width: 95%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    button:first-child {
+      span {
+        color: #ffffff;
+      }
+    }
+  }
+}

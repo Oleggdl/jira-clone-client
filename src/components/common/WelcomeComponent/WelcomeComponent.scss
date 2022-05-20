@@ -1,0 +1,15 @@
+@import './src/styles/mixins';
+
+.welcome-title {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 4rem;
+  @include disabled-selection;
+}
+
+.welcome-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+  @include disabled-selection;
+}

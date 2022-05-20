@@ -1,0 +1,54 @@
+@import './src/styles/variables';
+@import './src/styles/mixins';
+
+.auth-component-container {
+  width: 600px;
+  padding-top: 30px;
+  margin: 0 auto;
+
+  @include disabled-selection;
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: $main-color !important;
+  }
+}
+
+.auth-container {
+  background-color: $aside-background-color;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 40px 40px 20px 40px;
+
+  .button-container {
+    margin-left: 100px;
+  }
+
+  button:first-child {
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .ant-form-item-label {
+    width: 143px;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: $secondary-text;
+    margin-left: 143px;
+  }
+}
+
+.container-title {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}

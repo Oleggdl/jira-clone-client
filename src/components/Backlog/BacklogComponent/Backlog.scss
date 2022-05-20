@@ -1,0 +1,52 @@
+@import 'src/styles/variables';
+
+.backlog-container {
+  position: relative;
+  left: 300px;
+  padding: 40px;
+  width: calc(100% - 300px);
+  overflow-y: auto;
+  height: calc(100vh - 64px);
+}
+
+.users-on-project {
+  display: flex;
+  justify-content: left;
+}
+
+.user-info-wrapper {
+  position: fixed;
+  top: -64px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh + 64px);
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.user-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $main-color;
+  margin-right: 5px;
+  transition: .3s;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.9;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #50abfc;
+  }
+}
+
+.delete-user-from-project {
+  margin-top: 30px;
+
+  span {
+    color: unset;
+  }
+}

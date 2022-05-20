@@ -1,0 +1,121 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+
+.all-projects-container {
+  padding: 40px;
+  position: relative;
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  .create-project-button {
+    position: absolute;
+    right: 40px;
+
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .projects-actions {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: .3s;
+      @include disabled-selection;
+
+      &:hover {
+        background-color: $button-task-hover;
+      }
+    }
+  }
+
+  .settings-project {
+
+    form {
+      @include form;
+      z-index: 3;
+
+      .delete-project {
+
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: .3s;
+        padding: 2px 10px;
+        box-sizing: border-box;
+        color: #e51414;
+        border: 1px #e51414 solid;
+
+        @include disabled-selection;
+
+        &:hover {
+          background-color: #e51414;
+          color: #ffffff;
+        }
+
+      }
+
+      .delete-window {
+        position: absolute;
+        background-color: #c7c7c7;
+        padding: 15px;
+        border-radius: 5px;
+        right: 20px;
+        top: calc(100% - 10px);
+        z-index: 3;
+
+        h5 {
+          margin-bottom: 10px;
+        }
+
+        button {
+          padding: 0 4px;
+          height: 28px;
+          width: 60px;
+          font-size: 13px;
+        }
+
+        .primary-button {
+          margin-left: 10px;
+          margin-right: 10px;
+
+          span {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .project-settings-wrapper {
+      position: fixed;
+      top: -64px;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh + 64px);
+      background-color: rgb(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+  }
+}
+
+.supervisor-name{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1.6;
+  font-size: 16px;
+}

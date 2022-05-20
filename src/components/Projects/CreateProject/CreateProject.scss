@@ -1,0 +1,7 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+
+.create-project-container {
+  @include form;
+}

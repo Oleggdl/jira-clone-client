@@ -1,0 +1,74 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.task-component-container {
+  @include task-container;
+  position: relative;
+  display: block;
+  width: 100%;
+  border: unset;
+  text-align: left;
+  cursor: grab;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: $button-background-color;
+
+    .task-component-settings {
+      opacity: 1;
+    }
+
+    .task-title {
+      color: $main-color;
+    }
+  }
+}
+
+.task-component-key {
+  padding-top: 20px;
+  display: flex;
+
+  span {
+    margin-top: 2px;
+  }
+
+  .task-component-key-item {
+    min-width: 50px;
+    margin-top: 5px;
+    padding-left: 7px;
+    font-size: 13px;
+    font-weight: 100;
+    color: $secondary-text;
+  }
+}
+
+.task-board-marks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-top: 10px;
+}
+
+.task-component-labels {
+  min-width: 20px;
+  min-height: 24px;
+  font-size: 1.3rem;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: $column-container-background;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.task-component-settings {
+  position: absolute;
+  right: 10px;
+  margin-left: 10px;
+  opacity: 0;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: $column-container-background;
+  padding: 2px 5px;
+}
